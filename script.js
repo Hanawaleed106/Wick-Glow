@@ -15,7 +15,7 @@ orderButtons.forEach(function (button) {
 
         const productName = button.parentElement.querySelector("h3").textContent;
 
-        const phoneNumber = "01205672375";
+        const phoneNumber = "201205672375";
         const message = `Hello! I would like to order ${productName}`;
 
         window.open(
