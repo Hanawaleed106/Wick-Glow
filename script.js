@@ -1,5 +1,6 @@
 
 
+
 const menuToggle = document.getElementById("menuToggle");
 const navLinks = document.getElementById("navLinks");
 
@@ -18,10 +19,10 @@ orderButtons.forEach(function (button) {
         const phoneNumber = "201205672375";
         const message = `Hello! I would like to order ${productName}`;
 
-        window.open(
-            `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`,
-            "_blank"
-        );
+        const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+
+        window.location.href = whatsappURL;
     });
 });
+
 
